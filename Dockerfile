@@ -18,7 +18,7 @@ USER jovyan
 
 # RUN conda install -y scikit-learn
 
-RUN conda install -c conda-forge -c nvidia -c sleap/label/dev -c sleap -c anaconda sleap=1.4.1
+RUN pip install sleap[pypi]==1.4.1
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
