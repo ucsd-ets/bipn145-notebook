@@ -41,7 +41,7 @@ jobs:
             snmp pollinate libpq-dev postgresql-client powershell ruby-full \
             sphinxsearch subversion mongodb-org azure-cli microsoft-edge-stable \
             -y -f >/dev/null 2>&1
-          sudo aptitude purge google-cloud-sdk -f -y >/dev/null 2>&1
+          sudo aptitude purge google-cloud-sdk -f -y >/dev/null 2>&1 
           sudo aptitude purge microsoft-edge-stable -f -y >/dev/null 2>&1 || true
           sudo apt purge microsoft-edge-stable -f -y >/dev/null 2>&1 || true
           sudo aptitude purge '~n ^mysql' -f -y >/dev/null 2>&1
